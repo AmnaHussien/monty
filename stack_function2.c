@@ -84,10 +84,10 @@ void div_nodes(stack_t **stack, unsigned int lin_number)
 	int sum;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-		more_err(8, line_number, "div");
+		mor_err(8, lin_number, "div");
 
 	if ((*stack)->n == 0)
-		more_err(9, line_number);
+		mor_err(9, lin_number);
 	(*stack) = (*stack)->next;
 	sum = (*stack)->n / (*stack)->prev->n;
 	(*stack)->n = sum;

@@ -107,7 +107,7 @@ void find_func(char *opcode, char *valu, int ln, int format)
 		if (strcmp(opcode, func_list[i].opcode) == 0)
 		{
 			call_fun(func_list[i].f, opcode, valu, ln, format);
-			flag = 0;
+			flagg = 0;
 		}
 	}
 	if (flagg == 1)
