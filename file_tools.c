@@ -111,6 +111,7 @@ void find_func(char *opcode, char *valu, int ln, int format)
 	}
 	if (flagg == 1)
 		err(3, ln, opcode);
+	printf("\n");
 }
 
 /**
@@ -151,4 +152,5 @@ void call_fun(op_func func, char *op, char *val, int ln, int format)
 	}
 	else
 		func(&head, ln);
+	printf("\n");
 }
